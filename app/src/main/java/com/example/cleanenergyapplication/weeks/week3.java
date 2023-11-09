@@ -60,18 +60,21 @@ public class week3 extends AppCompatActivity {
             }
         });
 
-        if(course1.getCardBackgroundColor().equals(Color.GREEN) && course2.getCardBackgroundColor().equals(Color.GREEN)
-                && course3.getCardBackgroundColor().equals(Color.GREEN)) {
-            Toast.makeText(week3.this,done,Toast.LENGTH_LONG).show();
-            launchWeeks(done);
-        }
-
+        Button doneButton = findViewById(R.id.doneButton);
+        doneButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(week3.this,"Congratulations! Week 3 complete",Toast.LENGTH_LONG).show();
+                launchWeeks(done);
+            }
+        });
 
     }
-
-    private void launchWeeks(String done) {
+    private void launchWeeks(String done3) {
         Intent intent= new Intent(week3.this, Course_week.class);
-        intent.putExtra("week1", done);
+        intent.putExtra("done3", done);
         startActivity(intent);
     }
+
+
 }

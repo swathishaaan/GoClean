@@ -76,6 +76,16 @@
                 android:layout_height="match_parent"
                 android:background="@drawable/bg_window">
 
+                <ImageView
+                    android:id="@+id/week1IV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginEnd="34dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/baseline_lock_open_24" />
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -90,6 +100,7 @@
                     android:textSize="28sp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent" />
+
             </androidx.constraintlayout.widget.ConstraintLayout>
 
 
@@ -109,7 +120,7 @@
                 android:id="@+id/week2CL"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
-                android:background="@color/colorGrayText">
+                >
 
                 <TextView
                     android:layout_width="match_parent"
@@ -125,6 +136,16 @@
                     android:textSize="28sp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent" />
+
+                <ImageView
+                    android:id="@+id/week2IV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginEnd="12dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/baseline_lock_24" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
 
@@ -143,8 +164,17 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:id="@+id/week3CL"
-                android:background="@color/colorGrayText"
                 android:layout_height="80dp">
+
+                <ImageView
+                    android:id="@+id/week3IV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginEnd="12dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/baseline_lock_24" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -178,8 +208,19 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:id="@+id/week4CL"
-                android:background="@color/colorGrayText"
+
+
                 android:layout_height="80dp">
+
+                <ImageView
+                    android:id="@+id/week4IV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginEnd="12dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/baseline_lock_24" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -213,7 +254,17 @@
                 android:id="@+id/week5CL"
                 android:layout_width="288dp"
                 android:layout_height="80dp"
-                android:background="@color/colorGrayText">
+                >
+
+                <ImageView
+                    android:id="@+id/week5IV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="12dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/baseline_lock_24" />
 
                 <TextView
                     android:layout_width="match_parent"

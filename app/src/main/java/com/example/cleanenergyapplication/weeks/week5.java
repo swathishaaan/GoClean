@@ -65,11 +65,25 @@ public class week5 extends AppCompatActivity {
 
         if(course1.getCardBackgroundColor().equals(Color.GREEN) && course2.getCardBackgroundColor().equals(Color.GREEN)
                 && course3.getCardBackgroundColor().equals(Color.GREEN)) {
-            Toast.makeText(week5.this,done,Toast.LENGTH_LONG).show();
+            Toast.makeText(week5.this,"Congratulations! Week 5 complete",Toast.LENGTH_LONG).show();
             showDialog();
         }
 
 
+        Button doneButton = findViewById(R.id.doneButton);
+        doneButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(week5.this,"Congratulations! Week 5 complete",Toast.LENGTH_LONG).show();
+               launchHome();
+            }
+        });
+
+    }
+    private void launchWeeks(String done) {
+        Intent intent= new Intent(week5.this, Course_week.class);
+        intent.putExtra("done5", done);
+        startActivity(intent);
     }
 
     private void launchHome() {

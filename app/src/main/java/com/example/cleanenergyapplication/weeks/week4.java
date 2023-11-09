@@ -20,7 +20,8 @@ public class week4 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.week4);
+        setContentView(R.layout.week4
+        );
 
         Button check1 = findViewById(R.id.check1);
         Button check2 = findViewById(R.id.check2);
@@ -60,18 +61,21 @@ public class week4 extends AppCompatActivity {
             }
         });
 
-        if(course1.getCardBackgroundColor().equals(Color.GREEN) && course2.getCardBackgroundColor().equals(Color.GREEN)
-                && course3.getCardBackgroundColor().equals(Color.GREEN)) {
-            Toast.makeText(week4.this,done,Toast.LENGTH_LONG).show();
-            launchWeeks(done);
-        }
 
+
+        Button doneButton = findViewById(R.id.doneButton);
+        doneButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(week4.this,"Congratulations! Week 4 complete",Toast.LENGTH_LONG).show();
+                launchWeeks(done);
+            }
+        });
 
     }
-
     private void launchWeeks(String done) {
         Intent intent= new Intent(week4.this, Course_week.class);
-        intent.putExtra("week1", done);
+        intent.putExtra("done4", done);
         startActivity(intent);
     }
 }

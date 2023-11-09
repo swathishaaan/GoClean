@@ -10,14 +10,14 @@
         android:id="@+id/titleTextView2"
         android:layout_width="363dp"
         android:layout_height="71dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="140dp"
         android:fontFamily="@font/crimson_text"
         android:text="Please input your details from your recent energy bill!"
         android:textColor="#023210"
         android:textSize="25sp"
         android:textStyle="normal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintHorizontal_bias="0.533"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -44,7 +44,7 @@
         android:id="@+id/titleTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="124dp"
+        android:layout_marginTop="68dp"
         android:fontFamily="@font/crimson_pro_bold"
         android:text="Welcome, Marc!"
         android:textAlignment="textEnd"
@@ -52,7 +52,7 @@
         android:textSize="45sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.235"
+        app:layout_constraintHorizontal_bias="0.304"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

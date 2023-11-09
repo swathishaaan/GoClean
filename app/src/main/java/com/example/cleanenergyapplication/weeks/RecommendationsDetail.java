@@ -15,7 +15,8 @@ import com.example.cleanenergyapplication.Course_week;
 import com.example.cleanenergyapplication.R;
 
 public class RecommendationsDetail extends AppCompatActivity {
-    String done = "INTENT_MESSAGE";
+    String done = "Congratulations! Week one Complete";
+    int colourValue = Color.GREEN;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,19 +60,20 @@ public class RecommendationsDetail extends AppCompatActivity {
 
             }
         });
-
-        if(course1.getCardBackgroundColor().equals(Color.GREEN) && course2.getCardBackgroundColor().equals(Color.GREEN)
-        && course3.getCardBackgroundColor().equals(Color.GREEN)) {
-            Toast.makeText(RecommendationsDetail.this,done,Toast.LENGTH_LONG).show();
-            launchWeeks(done);
-        }
-
+        Button doneButton = findViewById(R.id.doneButton);
+        doneButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(RecommendationsDetail.this,done,Toast.LENGTH_LONG).show();
+                launchWeeks(done);
+            }
+        });
 
     }
-
     private void launchWeeks(String done) {
         Intent intent= new Intent(RecommendationsDetail.this, Course_week.class);
-        intent.putExtra("week1", done);
+        intent.putExtra("done", done);
         startActivity(intent);
     }
+
 }

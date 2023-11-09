@@ -15,7 +15,7 @@ import com.example.cleanenergyapplication.Course_week;
 import com.example.cleanenergyapplication.R;
 
 public class week2 extends AppCompatActivity {
-    String done = "Congratulations! Week one Complete";
+    String done = "Congratulations! Week two Complete";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +25,7 @@ public class week2 extends AppCompatActivity {
         Button check1 = findViewById(R.id.check1);
         Button check2 = findViewById(R.id.check2);
         Button check3 = findViewById(R.id.check3);
+        Button doneButton = findViewById(R.id.doneButton);
 
         ImageView rating1 = findViewById(R.id.rating1);
         ImageView rating2 = findViewById(R.id.rating2);
@@ -60,18 +61,38 @@ public class week2 extends AppCompatActivity {
             }
         });
 
-        if(course1.getCardBackgroundColor().equals(Color.GREEN) && course2.getCardBackgroundColor().equals(Color.GREEN)
-                && course3.getCardBackgroundColor().equals(Color.GREEN)) {
-            Toast.makeText(week2.this,done,Toast.LENGTH_LONG).show();
-            launchWeeks(done);
-        }
-
+//        if(course1.getCardBackgroundColor().equals(Color.GREEN) && course2.getCardBackgroundColor().equals(Color.GREEN)
+//                && course3.getCardBackgroundColor().equals(Color.GREEN)) {
+//            Toast.makeText(week2.this,done,Toast.LENGTH_LONG).show();
+//            launchWeeks(done);
+//        }
+//
+        doneButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+//                if(course3.getSolidColor()!= Color.GREEN) {
+//                    Toast.makeText(week2.this,"Please finish activity",Toast.LENGTH_LONG).show();
+//                } else {
+                    Toast.makeText(week2.this,"Congratulations! Week 2 complete",Toast.LENGTH_LONG).show();
+                    launchWeeks(done);
+//                }
+            }
+        });
 
     }
 
     private void launchWeeks(String done) {
-        Intent intent= new Intent(week2.this, Course_week.class);
-        intent.putExtra("week1", done);
+        Intent intent = new Intent(week2.this, Course_week.class);
+        intent.putExtra("done2", done);
         startActivity(intent);
     }
+//        private void launchWeeks(String done2) {
+//            Intent intent = new Intent(week2.this, Course_week.class);
+//            Bundle bundle = new Bundle();
+//            bundle.putString ("done2", done2);
+//            intent.putExtras(bundle);
+//            startActivity(intent);
+//    }
+
+
 }
