@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/rating3"
+        android:layout_width="74dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="72dp"
+        android:background="@drawable/greystar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <ImageView
+        android:id="@+id/rating1"
+        android:layout_width="66dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/greystar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <ImageView
+        android:id="@+id/rating2"
+        android:layout_width="73dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/greystar"
+        app:layout_constraintEnd_toStartOf="@+id/rating3"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="291dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/rounded_titles"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="184dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="28dp"
+        android:shadowColor="@color/white"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="20"
+        android:text="Week 2"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="287dp"
+        android:layout_height="47dp"
+
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="52dp"
+        android:shadowRadius="20"
+        android:text="MORE MORE MORE"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/crimson_pro_bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="167dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="1dp"
+        android:text="Work through these challenges and earn points!"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="100dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/justgo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="67dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/leaf"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/course1"
+        android:layout_width="313dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="72dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+
+        <TextView
+            android:id="@+id/textRecommTitle"
+            android:layout_width="271dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="sans-serif"
+            android:shadowColor="@color/white"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="20"
+            android:text="Run 3 full Washer Loads"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="307dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="17dp"
+        android:background="@drawable/circle"
+        app:layout_constraintEnd_toStartOf="@+id/check1"
+        app:layout_constraintTop_toBottomOf="@+id/course1" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="283dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="4dp"
+
+        android:layout_marginEnd="96dp"
+        android:fontFamily="sans-serif"
+
+        android:text=" Make it a habit to use lights that are neccasary. Keep rest off"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/course1" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/course3"
+        android:layout_width="313dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="72dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13">
+
+
+        <TextView
+            android:layout_width="272dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="sans-serif"
+            android:shadowColor="@color/white"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="20"
+            android:text="Unplug 20 Idle Electronics"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="305dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/circle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/course3" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="283dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="44dp"
+
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif"
+
+        android:text="Unplugging your elctronic can save you 5% on your bill"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/course3" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="307dp"
+        android:layout_height="95dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/circle"
+        app:layout_constraintEnd_toStartOf="@+id/check2"
+        app:layout_constraintTop_toBottomOf="@+id/course2" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/course2"
+        android:layout_width="313dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="72dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10">
+
+
+        <TextView
+            android:layout_width="271dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="sans-serif"
+            android:shadowColor="@color/white"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="20"
+            android:text="Have 5 cold showers"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/check3"
+        android:layout_width="47dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/baseline_check_box_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/check2" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/check2"
+        android:layout_width="47dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/baseline_check_box_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/check1" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="283dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:fontFamily="sans-serif"
+        android:text=""
+
+        android:textSize="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/course1" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="279dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="36dp"
+
+        android:fontFamily="sans-serif"
+        android:text="According to Energy.gov, water heating accounts for about 20% of your home's energy use. Switching to cold showers, that's a potential savings of $240 per year!."
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/course2" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/check1"
+        android:layout_width="47dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/baseline_check_box_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
